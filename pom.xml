@@ -8,22 +8,14 @@
   <packaging>kjar</packaging>
   <name>CVSHealthCare</name>
   <description>CVSHealthCare Poc</description>
-  
-  <distributionManagement>
-  <repository>
-    <id>cvsbrms</id>
-    <name>OpenShift Maven repo</name>
-    <url>http://nexus-nexus.poc.cvs.openshift.online/repository/maven-releases/</url>
-  </repository>
-
-  <snapshotRepository>
-    <id>cvsbrms</id>
-    <name>OpenShift Maven repo</name>
-    <url>http://nexus-nexus.poc.cvs.openshift.online/repository/maven-snapshots/</url>
-  </snapshotRepository>
-</distributionManagement>
   <dependencies>
     <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>${version.org.kie}</version>
+      <scope>provided</scope>
+    </dependency>
+      <dependency>
       <groupId>CVSjar</groupId>
       <artifactId>Health</artifactId>
       <version>1.0</version>
