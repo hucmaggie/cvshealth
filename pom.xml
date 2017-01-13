@@ -8,22 +8,33 @@
   <packaging>kjar</packaging>
   <name>CVSHealthCare</name>
   <description>CVSHealthCare Poc</description>
-  <properties>
-    <version.org.kie>6.4.0.Final-redhat-3</version.org.kie>
-  </properties>
-    <dependencies>
+  
+  <distributionManagement>
+  <repository>
+    <id>cvsbrms</id>
+    <name>OpenShift Maven repo</name>
+    <url>http://nexus-nexus.poc.cvs.openshift.online/repository/maven-releases/</url>
+  </repository>
+
+  <snapshotRepository>
+    <id>cvsbrms</id>
+    <name>OpenShift Maven repo</name>
+    <url>http://nexus-nexus.poc.cvs.openshift.online/repository/maven-snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
+  <dependencies>
     <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-api</artifactId>
-      <version>${version.org.kie}</version>
-      <scope>provided</scope>
+      <groupId>CVSjar</groupId>
+      <artifactId>Health</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
   <repositories>
     <repository>
-      <id>guvnor-m2-repo</id>
-      <name>Guvnor M2 Repo</name>
-      <url>http://localhost:8080/business-central/maven2/</url>
+      <id>openshift_maven</id>
+      <name>OpenShift Maven repo</name>
+      <url>http://nexus-nexus.poc.cvs.openshift.online/repository/maven-releases/</url>
     </repository>
   </repositories>
  <build>
