@@ -3,25 +3,9 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>guvnor-m2-repo</id>
-        <url>http://localhost:8080/business-central/maven2/</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>cvsbrms</id>
         <url>http://nexus-nexus.poc.cvs.openshift.online/repository/maven-releases/</url>
         <source>DISTRIBUTION_MANAGEMENT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local</id>
-        <url>C:\Users\ssrivastava6/.m2/repository</url>
-        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
